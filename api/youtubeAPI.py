@@ -7,7 +7,7 @@ user_Ref = db.collection('user')
 
 youtubeAPI = Blueprint('youtubeAPI', __name__)
 
-@youtubeAPI.route('/list/auditivo')
+@youtubeAPI.route('/list/visual')
 def read():
     try:
         urlYoutube = [
