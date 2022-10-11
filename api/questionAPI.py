@@ -22,6 +22,7 @@ def variables():
                 ],
                 "respuesta": "Es un espacio en memoria en el cual se almacena información que deseamos almacenar de manera temporal"
             },
+            {
                 "question 2": "Cual de las opciones no es dato primitivo simple",
                 "option": [
                     "1: Numérico",
@@ -47,58 +48,58 @@ def variables():
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/variables/1', methods=['POST'])
+@ questionAPI.route('/variables/1', methods=['POST'])
 def variables1():
     try:
-        answer = "Es un espacio en memoria en el cual se almacena información que deseamos almacenar de manera temporal"
-        validation = False
+        answer= "Es un espacio en memoria en el cual se almacena información que deseamos almacenar de manera temporal"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/variables/2', methods=['POST'])
+@ questionAPI.route('/variables/2', methods=['POST'])
 def variables2():
     try:
-        answer= "String"
-        validation = False
+        answer = "String"
+        validation= False
         if request.json['respuesta'] == 3:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/variables/3', methods=['POST'])
+@ questionAPI.route('/variables/3', methods=['POST'])
 def variables3():
     try:
-        answer =   "Arrays"
-        validation = False
+        answer=   "Arrays"
+        validation= False
         if request.json['respuesta'] == "Arrays":
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasdecision')
+@ questionAPI.route('/estructurasdecision')
 def estructurasdecision():
     try:
-        question = [
+        question= [
             {
                 "question 1": "Qué es una estructura de decisión",
                 "option": [
@@ -147,7 +148,7 @@ def estructurasdecision():
                     "Sirven para comparar dos o más valores",
                     "Ninguna de las anteriores "
                 ],
-                "respuesta":"Sirven para comparar dos o más valores"
+                "respuesta": "Sirven para comparar dos o más valores"
             },
             {
                 "question 6": "Cual de las siguientes opciones no es un operador de comparación",
@@ -186,139 +187,139 @@ def estructurasdecision():
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasdecision/1', methods=['POST'])
+@ questionAPI.route('/estructurasdecision/1', methods=['POST'])
 def estructurasdecision1():
     try:
-        answer =  "Una estructura de decisión permite que la ejecución de un algoritmo tome distintos caminos, que llevan a distintos resultados"
-        validation = False
+        answer=  "Una estructura de decisión permite que la ejecución de un algoritmo tome distintos caminos, que llevan a distintos resultados"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasdecision/2', methods=['POST'])
+@ questionAPI.route('/estructurasdecision/2', methods=['POST'])
 def estructurasdecision2():
     try:
-        answer = "if condicion: ejecutar sentencia" 
-        validation = False
+        answer = "if condicion: ejecutar sentencia"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasdecision/3', methods=['POST'])
+@ questionAPI.route('/estructurasdecision/3', methods=['POST'])
 def estructurasdecision3():
     try:
-        answer = "if condicion: ejecutar sentencia else: ejecutar codigo si la condicion es False"
-        validation = False
+        answer= "if condicion: ejecutar sentencia else: ejecutar codigo si la condicion es False"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasdecisión/4', methods=['POST'])
+@ questionAPI.route('/estructurasdecisión/4', methods=['POST'])
 def estructurasdecision4():
     try:
-        answer = "if condicion: ejecutar sentencia elif segunda_condicion: ejecutar sentencia else: ejecutar sentencia"
-        validation = False
+        answer= "if condicion: ejecutar sentencia elif segunda_condicion: ejecutar sentencia else: ejecutar sentencia"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasdecision/5', methods=['POST'])
+@ questionAPI.route('/estructurasdecision/5', methods=['POST'])
 def estructurasdecision5():
     try:
-        answer = "Sirven para comparar dos o más valores"
-        validation = False
+        answer= "Sirven para comparar dos o más valores"
+        validation= False
         if request.json['respuesta'] == 3:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasdecision/6', methods=['POST'])
+@ questionAPI.route('/estructurasdecision/6', methods=['POST'])
 def estructurasdecision6():
     try:
 
-        answer = "|=="
-        validation = False
+        answer= "|=="
+        validation= False
         if request.json['respuesta'] == 4:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasdecisión/7', methods=['POST'])
+@ questionAPI.route('/estructurasdecisión/7', methods=['POST'])
 def estructurasdecision7():
     try:
-        answer = "Sentencia if..else"
-        validation = False
+        answer= "Sentencia if..else"
+        validation= False
         if request.json['respuesta'] == 2:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasdecisión/8', methods=['POST'])
+@ questionAPI.route('/estructurasdecisión/8', methods=['POST'])
 def estructurasdecisión8():
     try:
-        answer =  "condition_if_true if condition else condition_if_false"
-        validation = False
+        answer=  "condition_if_true if condition else condition_if_false"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasiterativa')
+@ questionAPI.route('/estructurasiterativa')
 def estructurasdecisión():
     try:
-        question = [
+        question= [
             {
                 "question 1": "Que es una Estructuras iterativa",
                 "option": [
@@ -394,123 +395,123 @@ def estructurasdecisión():
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasiterativa/1', methods=['POST'])
+@ questionAPI.route('/estructurasiterativa/1', methods=['POST'])
 def estructurasiterativa1():
     try:
-        answer = "las Estructuras iterativa nos permiten ejecutar un mismo código, de manera repetida, mientras se cumpla una condición"
-        validation = False
+        answer= "las Estructuras iterativa nos permiten ejecutar un mismo código, de manera repetida, mientras se cumpla una condición"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasiterativa/2', methods=['POST'])
+@ questionAPI.route('/estructurasiterativa/2', methods=['POST'])
 def estructurasiterativa2():
     try:
-        answer = "while condition: a block of statements"
-        validation = False
+        answer= "while condition: a block of statements"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasiterativa/3', methods=['POST'])
+@ questionAPI.route('/estructurasiterativa/3', methods=['POST'])
 def estructurasiterativa3():
     try:
-        answer = "for sequence in val: loop body"
-        validation = False
+        answer= "for sequence in val: loop body"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasiterativa/4', methods=['POST'])
+@ questionAPI.route('/estructurasiterativa/4', methods=['POST'])
 def estructurasiterativa4():
     try:
-        answer = "Detener la ejecución de una Estructuras iterativa"
-        validation = False
+        answer= "Detener la ejecución de una Estructuras iterativa"
+        validation= False
         if request.json['respuesta'] == 3:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasiterativa/5', methods=['POST'])
+@ questionAPI.route('/estructurasiterativa/5', methods=['POST'])
 def estructurasiterativa5():
     try:
-        answer = "Devolver la ejecución al comienzo del ciclo"
-        validation = False
+        answer= "Devolver la ejecución al comienzo del ciclo"
+        validation= False
         if request.json['respuesta'] == 2:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasiterativa/6', methods=['POST'])
+@ questionAPI.route('/estructurasiterativa/6', methods=['POST'])
 def estructurasiterativa6():
     try:
-        answer =  "Son bucles anidados cuando un bucle se encuentra en el bloque de instrucciones de otro bloque"
-        validation = False
+        answer=  "Son bucles anidados cuando un bucle se encuentra en el bloque de instrucciones de otro bloque"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/estructurasiterativa/7', methods=['POST'])
+@ questionAPI.route('/estructurasiterativa/7', methods=['POST'])
 def estructurasiterativa7():
     try:
-        answer = "Son bucles anidados cuando un bucle se encuentra en el bloque de instrucciones de otro bloque"
-        validation = False
+        answer= "Son bucles anidados cuando un bucle se encuentra en el bloque de instrucciones de otro bloque"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/funcionesiterativas')
+@ questionAPI.route('/funcionesiterativas')
 def funcionesiterativas():
     try:
         request.json['respuesta']
-        question = [
+        question= [
             {
                 "question 1": "Que es una función ",
                 "option": [
@@ -563,65 +564,65 @@ def funcionesiterativas():
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/funcionesiterativas/1', methods=['POST'])
+@ questionAPI.route('/funcionesiterativas/1', methods=['POST'])
 def funcionesiterativas1():
     try:
-        answer = "Son bloques de código que se pueden reutilizar simplemente llamando a la función"
-        validation = False
+        answer= "Son bloques de código que se pueden reutilizar simplemente llamando a la función"
+        validation= False
         if request.json['respuesta'] == 2:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/funcionesiterativas/2', methods=['POST'])
+@ questionAPI.route('/funcionesiterativas/2', methods=['POST'])
 def funcionesiterativas2():
     try:
-        answer = "def functionName(): code block"
-        validation = False
+        answer= "def functionName(): code block"
+        validation= False
         if request.json['respuesta'] == 4:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/funcionesiterativas/3', methods=['POST'])
+@ questionAPI.route('/funcionesiterativas/3', methods=['POST'])
 def funcionesiterativas3():
     try:
-        answer = "Es un valor que la función espera recibir cuando sea llamada"
-        validation = False
+        answer= "Es un valor que la función espera recibir cuando sea llamada"
+        validation= False
         if request.json['respuesta'] == 3:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
 
 
-@questionAPI.route('/funcionesiterativas/4', methods=['POST'])
+@ questionAPI.route('/funcionesiterativas/4', methods=['POST'])
 def funcionesiterativas4():
     try:
-        answer = "args y kwargs"
-        validation = False
+        answer= "args y kwargs"
+        validation= False
         if request.json['respuesta'] == 1:
-            validation = True
+            validation= True
 
         return jsonify({
-            'validation' : validation,
-            'answer' : answer
+            'validation': validation,
+            'answer': answer
             }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
