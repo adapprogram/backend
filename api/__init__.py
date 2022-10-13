@@ -15,7 +15,7 @@ def create_app():
     app.register_blueprint(questionAPI, url_prefix='/question')
 
     from .kinesticoAPI import kinesticoAPI
-    app.register_blueprint(kinesticoAPI, url_prefix='/kinestico')
+    app.register_blueprint(kinesticoAPI, url_prefix='/video')
 
     return app
 

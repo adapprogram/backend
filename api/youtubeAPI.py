@@ -19,7 +19,6 @@ def read():
                         "url": 'https://youtu.be/ZAEI--hSr9E'
                     }
                 ]
-
             },
             {
                 "temas": "Estructuras de decisión",
@@ -86,7 +85,6 @@ def read():
                         "titulo": "Estructuras iterativas - Sentencia return en funciones",
                         "url": 'https://youtu.be/96r8PzpozgU'
                     }
-
                 ]
             },
         ]
