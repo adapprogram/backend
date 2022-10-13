@@ -83,7 +83,7 @@ def tiposdatos():
                     }
                     ,
                     {
-                        "titulo": "Funciones iterativas - uso de return",
+                        "titulo": "Funciones iterativas - Sentencia return en funciones",
                         "url": "Funciones /nReturn /n Se utiliza una declaración de return para finalizar la ejecución de la llamada de función y devuelve el resultado (el valor de la expresión que sigue a la palabra clave return) . Las sentencias posteriores a las sentencias de retorno no se ejecutan. Si la declaración de devolución no tiene ninguna expresión, se devuelve el valor especial Ninguno. Una declaración de retorno se usa en general para invocar una función para que las declaraciones pasadas puedan ejecutarse. /nSyntax: /ndef fun():/n    statements/n    return [expression] /nejemplo /ndef suma(*args): /n	resultado = 0/n 	for num in args: /n		resultado += num/n	return resultado/nprint(suma(1,2,3,4,5,6))",
                     }
                 ]
