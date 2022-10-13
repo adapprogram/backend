@@ -81,6 +81,11 @@ def tiposdatos():
                         "titulo": "Funciones iterativas - Argumentos de una función de tipo args y kwargs",
                         "url": "Funciones/nArgumentos args y kwargs/nExisten dos tipos de argumentos en Python, los convencionales y aquellos que están sujetos a un nombre específico, generalmente identificados como args (arguments) y kwargs (keyword arguments), respectivamente. Encontrar un término en el español para estos últimos resulta algo complejo, equivaldría a argumentos de palabras clave, así que simplemente los llamaremos por su nombre original. /nUna de las principales diferencias entre los dos tipos de argumentos, como observamos anteriormente, es que los convencionales son posicionales, mientras que en los keyword arguments su ubicación es indistinta. /nEjemplo de args/ndef suma(*args): /n    resultado = 0/n    for num in args: /n        resultado += num/n    print(resultado) /nsuma(1, 2, 3) /nResultado /n6/nEjemplo de kwargs/ndef concatenacion(**kwargs): /n    resultado = ""/n    for arg in kwargs.values():/n        resultado += ' ' + arg/n    print(resultado)concatenacion(a='python', b='es', c='un', d='lenguaje', e='de',f='programacion')/nResultado/npython es un lenguaje de programacion",
                     }
+                    ,
+                    {
+                        "titulo": "Funciones iterativas - uso de return",
+                        "url": "Funciones /nReturn /n Se utiliza una declaración de return para finalizar la ejecución de la llamada de función y devuelve el resultado (el valor de la expresión que sigue a la palabra clave return) . Las sentencias posteriores a las sentencias de retorno no se ejecutan. Si la declaración de devolución no tiene ninguna expresión, se devuelve el valor especial Ninguno. Una declaración de retorno se usa en general para invocar una función para que las declaraciones pasadas puedan ejecutarse. /nSyntax: /ndef fun():/n    statements/n    return [expression] /nejemplo /ndef suma(*args): /n	resultado = 0/n 	for num in args: /n		resultado += num/n	return resultado/nprint(suma(1,2,3,4,5,6))",
+                    }
                 ]
             },
         ]
