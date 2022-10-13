@@ -82,7 +82,7 @@ def read():
                         "url": 'https://youtu.be/7MGKW5CALRM'
                     },
                     {
-                        "titulo": "Estructuras iterativas - Sentencia return en funciones",
+                        "titulo": "Funciones iterativas - Sentencia return en funciones",
                         "url": 'https://youtu.be/96r8PzpozgU'
                     }
                 ]
