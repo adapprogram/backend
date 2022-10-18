@@ -631,17 +631,17 @@ def kinesticoestructurasdecision():
     try:
         question = [
             {
-                "question": "Escribir un programa que pregunte al usuario su edad y muestre por pantalla si es mayor de 12 años.",
+                "question": "Escribir un programa que pregunte al usuario su edad y muestre por pantalla si es mayor de 12 años.<br>Entrada, estos valores deben estar escritos en el código de python <br>Edad= 14<br>Salida, este debe ser el mensaje que retorne la solución <br>Es mayor de 12 años",
             },
-            {"question": "Escribir un programa que almacene la cadena de caracteres contraseña en una variable, pregunte al usuario por la contraseña e imprima por pantalla si la contraseña introducida por el usuario coincide con la guardada en la variable sin tener en cuenta mayúsculas y minúsculas.",
-
+            {
+                "question": "Escribir un programa que almacene la cadena de caracteres contraseña en una variable, pregunte al usuario por la contraseña e imprima por pantalla si la contraseña introducida por el usuario coincide con la guardada en la variable sin tener en cuenta mayúsculas y minúsculas.<br>Entrada, estos valores deben estar escritos en el código de python <br>Contraseña = python<br>ContraseñaValidation= python<br>Salida, este debe ser el mensaje que retorne la solución <br>La contraseña es correcta"
              },
             {
-                "question": "Los tramos impositivos para la declaración de la renta en un determinado país son los siguientes:/nRenta	Tipo impositivo/nMenos de 10000€	5%/nEntre 10000€ y 20000€	15%/nEntre 20000€ y 35000€	20%/nEntre 35000€ y 60000€	30%/nMás de 60000€	45%/nEscribir un programa que pregunte al usuario su renta anual y muestre por pantalla el tipo impositivo que le corresponde.",
+                "question": "Los tramos impositivos para la declaración de la renta en un determinado país son los siguientes:<br>Renta	Tipo impositivo<br>Menos de 10000€	5%<br>Entre 10000€ y 20000€	15%<br>Entre 20000€ y 35000€	20%<br>Entre 35000€ y 60000€	30%<br>Más de 60000€	45%<br>Escribir un programa que pregunte al usuario su renta anual y muestre por pantalla el tipo impositivo que le corresponde.<br>Entrada, estos valores deben estar escritos en el código de python <br>rentaAnual = 27500<br>Salida, este debe ser el mensaje que retorne la solución <br>Tienes que pagar 5500€",
     
             },
             {
-                "question": "Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par o impar.",
+                "question": "Escribir un programa que pida al usuario un número entero y muestre por pantalla si es par o impar.<br>Entrada, estos valores deben estar escritos en el código de python <br>Numero <br>Salida, este debe ser el mensaje que retorne la solución <br>El numero es impar",
             }
         ]
         return jsonify(question), 200
@@ -732,20 +732,20 @@ def kinesticoestructurasiterativa():
     try:
         question = [
             {
-                "question": " Escribir un programa dada una palabra, la muestre por pantalla 10 veces.",
+                "question": " Escribir un programa dada una palabra, la muestre por pantalla 10 veces.<br> Entrada, estos valores deben estar escritos en el código de python <br>Itera= 1<br>Salida, este debe ser el mensaje que retorne la solución <br>1 2 3 4 5 6 7 8 9 10",
             },
-            {"question": "Escribir un programa que imprima los números del 1 al 10, pero que no imprima los numero 4 y 7.",
-
-             },
             {
-                "question": "Escriba un programa que multiplique cada valor de una lista por si mismo, e imprima el total de esta. ",
+                "question": "Escribir un programa que imprima los números del 1 al 10, pero que no imprima los numero 4 y 7.<br>Entrada, estos valores deben estar escritos en el código de python <br>Itera= 1<br>Salida, este debe ser el mensaje que retorne la solución <br>1 2 3 5 6 8 9 10",
+            },
+            {
+                "question": "Escriba un programa que multiplique cada valor de una lista por si mismo, e imprima el total de esta. <br>Entrada, estos valores deben estar escritos en el código de python <br>Lista = [1, 5 , 6, 7, 8] <br>Salida, este debe ser el mensaje que retorne la solución <br>La multiplicacion de la lista da un total de 1680",
     
             },
             {
-                "question": "Escribir un programa que pregunte al usuario su edad y muestre por pantalla todos los años que ha cumplido (desde 1 hasta su edad).",
+                "question": "Escribir un programa que pregunte al usuario su edad y muestre por pantalla todos los años que ha cumplido (desde 1 hasta su edad).<br>Entrada, estos valores deben estar escritos en el código de python <br>Edad= 8<br>Salida, este debe ser el mensaje que retorne la solución <br>Has cumplido 1 anos<br>Has cumplido 2 anos<br>Has cumplido 3 anos<br>Has cumplido 4 anos<br>Has cumplido 5 anos<br>Has cumplido 6 anos<br>Has cumplido 7 anos<br>Has cumplido 8 anos<br>",
             },
             {
-                "question": "Escribir un programa que imprima las tablas de multiplicar del 1 al 10.",
+                "question": "Escribir un programa que imprima las tablas de multiplicar del 1 al 10.<br>Entrada, estos valores deben estar escritos en el código de python <br>Lista1=[1,2,3,4,5,6,7,8,9,10] <br>Lista2=[1,2,3,4,5,6,7,8,9,10] <br>Salida, este debe ser el mensaje que retorne la solución <br>el producto es 1 <br>el producto es 2 <br>el producto es 3 <br>el producto es 4 <br>el producto es 5 <br>el producto es 6 <br>el producto es 7 <br>el producto es 8 <br>el producto es 9 <br>el producto es 10 <br>el producto es 2 <br>el producto es 4 <br>el producto es 6 <br>el producto es 8 <br>el producto es 10 <br>el producto es 12 <br>el producto es 14 <br>el producto es 16 <br>el producto es 18 <br>el producto es 20 <br>el producto es 3 <br>el producto es 6 <br>el producto es 9 <br>el producto es 12 <br>el producto es 15 <br>el producto es 18 <br>el producto es 21 <br>el producto es 24 <br>el producto es 27 <br>el producto es 30 <br>el producto es 4 <br>el producto es 8 <br>el producto es 12 <br>el producto es 16 <br>el producto es 20 <br>el producto es 24 <br>el producto es 28 <br>el producto es 32 <br>el producto es 36 <br>el producto es 40 <br>el producto es 5 <br>el producto es 10 <br>el producto es 15 <br>el producto es 20 <br>el producto es 25 <br>el producto es 30 <br>el producto es 35 <br>el producto es 40 <br>el producto es 45 <br>el producto es 50 <br>el producto es 6 <br>el producto es 12 <br>el producto es 18 <br>el producto es 24 <br>el producto es 30 <br>el producto es 36 <br>el producto es 42 <br>el producto es 48 <br>el producto es 54 <br>el producto es 60 <br>el producto es 7 <br>el producto es 14 <br>el producto es 21 <br>el producto es 28 <br>el producto es 35 <br>el producto es 42 <br>el producto es 49 <br>el producto es 56 <br>el producto es 63 <br>el producto es 70 <br>el producto es 8 <br>el producto es 16 <br>el producto es 24 <br>el producto es 32 <br>el producto es 40 <br>el producto es 48 <br>el producto es 56 <br>el producto es 64 <br>el producto es 72 <br>el producto es 80 <br>el producto es 9 <br>el producto es 18 <br>el producto es 27 <br>el producto es 36 <br>el producto es 45 <br>el producto es 54 <br>el producto es 63 <br>el producto es 72 <br>el producto es 81 <br>el producto es 90 <br>el producto es 10 <br>el producto es 20 <br>el producto es 30 <br>el producto es 40 <br>el producto es 50 <br>el producto es 60 <br>el producto es 70 <br>el producto es 80 <br>el producto es 90 <br>el producto es 100 ",
             }
         ]
         return jsonify(question), 200
@@ -816,20 +816,76 @@ def kinesticofuncionesiterativas():
     try:
         question = [
             {
-
-                "question":"Escribir una función que muestre por pantalla el saludo ¡Hola, amiga! cada vez que se la invoque.",
+                "question":"Escribir una función que muestre por pantalla el saludo ¡Hola, amiga! cada vez que se la invoque.<br>Entrada, estos valores deben estar escritos en el código de python <br>Salida, este debe ser el mensaje que retorne la solución<br>¡Hola, amigo!",
             },
-            {"question": "Escribir una función a la que se le pase una cadena <nombre> y muestre por pantalla el saludo ¡hola <nombre>!.",
+            {"question": "Escribir una función a la que se le pase una cadena <nombre> y muestre por pantalla el saludo ¡hola <nombre>!.<br>Entrada, estos valores deben estar escritos en el código de python <br>Nombre = Steven <br>Salida, este debe ser el mensaje que retorne la solución <br>¡hola steven! <br>",
 
              },
             {
-                "question": "Escriba una función que reciba un argumento **kwargs y realice la suma de los values.",
+                "question": "Escriba una función que reciba un argumento **kwargs y realice la suma de los values.<br>Entrada, estos valores deben estar escritos en el código de python <br>Lista = [1,10,84,6,4] <br>Salida, este debe ser el mensaje que retorne la solución <br>La suma total es 105",
     
             },
             {
-                "question": "Escribir una función que calcule el máximo común divisor de dos números.",
+                "question": "Escribir una función que calcule el máximo común divisor de dos números.<br>Entrada, estos valores deben estar escritos en el código de python <br>Numero1=24<br>Numero2=36<br>Salida, este debe ser el mensaje que retorne la solución <br>12",
             }
         ]
         return jsonify(question), 200
+    except Exception as e:
+        return f"an error ocurred : {e}"
+
+@ questionAPI.route('/kinestico/funcionesiterativas/1', methods=['POST'])
+def kinesticofuncionesiterativas1():
+    try:
+        answer = "¡hola amigo!"
+        validation = False
+        if request.json['respuesta'].replace("  ","") == answer:
+            validation = True
+
+        return jsonify({
+            'validation': validation,
+            'answer': answer
+        }), 200
+    except Exception as e:
+        return f"an error ocurred : {e}"
+@ questionAPI.route('/kinestico/funcionesiterativas/2', methods=['POST'])
+def kinesticofuncionesiterativas2():
+    try:
+        answer = "¡hola steven!"
+        validation = False
+        if request.json['respuesta'].replace("  ","") == answer:
+            validation = True
+
+        return jsonify({
+            'validation': validation,
+            'answer': answer
+        }), 200
+    except Exception as e:
+        return f"an error ocurred : {e}"
+@ questionAPI.route('/kinestico/funcionesiterativas/3', methods=['POST'])
+def kinesticofuncionesiterativas3():
+    try:
+        answer = "La suma total es 105"
+        validation = False
+        if request.json['respuesta'].replace("  ","") == answer:
+            validation = True
+
+        return jsonify({
+            'validation': validation,
+            'answer': answer
+        }), 200
+    except Exception as e:
+        return f"an error ocurred : {e}"
+@ questionAPI.route('/kinestico/funcionesiterativas/4', methods=['POST'])
+def kinesticofuncionesiterativas4():
+    try:
+        answer = "12"
+        validation = False
+        if request.json['respuesta'].replace("  ","") == answer:
+            validation = True
+
+        return jsonify({
+            'validation': validation,
+            'answer': answer
+        }), 200
     except Exception as e:
         return f"an error ocurred : {e}"
