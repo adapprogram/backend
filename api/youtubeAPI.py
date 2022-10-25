@@ -1,9 +1,4 @@
-import uuid
-from flask import Blueprint, request, jsonify
-from firebase_admin import firestore
-
-db = firestore.client()
-user_Ref = db.collection('user')
+from flask import Blueprint, jsonify
 
 youtubeAPI = Blueprint('youtubeAPI', __name__)
 
