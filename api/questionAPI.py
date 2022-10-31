@@ -3,7 +3,7 @@ from flask import Blueprint, request, jsonify
 questionAPI = Blueprint('questionAPI', __name__)
 
 
-@questionAPI.route('/ ')
+@questionAPI.route('/variables')
 def variables():
     try:
         question = [
